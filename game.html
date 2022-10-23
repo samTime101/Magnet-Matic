@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color:black;
+        }
+
+        #gameName {
+            color: white;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: large;
+        }
+
+        #gameStart {
+            font-size: large;
+            font-weight: 800;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            display: flex;
+            border: 5px solid wheat;
+            padding: 20px 50px 20px;
+            
+            border-radius: 10px;
+            margin: auto;
+            margin-top: 20px;
+            text-align: center;
+        }
+        #gameStart:hover{
+            cursor: pointer;
+            background: none;
+            border: 1px solid white;
+            font-size: large;
+            font-weight: 800;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: white;
+            padding-top: 20px;
+
+        }
+
+        canvas {
+            display: flex;
+            margin: auto;
+            margin-top: 5px;
+            border-radius: 20px;
+
+
+        }
+
+        #score {
+            color: white;
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        #hp {
+            color: white;
+            font-family: sans-serif;
+            text-align: center;
+        }
+        #info{
+            position: relative;
+            left: 0px;
+            color: antiquewhite;
+            font-family: sans-serif;
+        }
+        #name{
+            position: relative;
+            left: 0px;
+            color: antiquewhite;
+            font-family: sans-serif;
+        }
+    </style>
+    <title>Game tutorial</title>
+</head>
+
+<body>
+    <p id="hp"></p>
+    <p id="score"></p>
+    <p id="info">HIGH SCORES</p>
+    <p id="name"></p>
+    <p id="gameName">MAGNET MATRIC BY SAMIP REGMI</p>
+    <img src="./imageAsstes/apple.jpg" alt="" id="apple" style="display: none;">
+    <img src="./imageAsstes/background.jpg" alt="" id="background" style="display: none;">
+    <img src="./imageAsstes/magnet.jpg" alt="" id="magnet" style="display: none;">
+
+    <canvas id="canvas" width="600" height="400" style="border: 1px solid wheat;"></canvas>
+    <button id="gameStart">START</button>
+    <p id="gameOver"></p>
+</body>
+<script src="game.js"></script>
+
+</html>
