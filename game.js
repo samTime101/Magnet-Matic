@@ -1,4 +1,4 @@
-let op = prompt("enter your name")
+let input = prompt("enter your name")
 
 let canvas = document.getElementById("canvas");
 let ctx = canvas.getContext('2d');
@@ -195,7 +195,7 @@ function gameStart() {
 
                 document.getElementById('hp').textContent = "HP:" + '0'
 
-                let text = document.getElementById('name').innerHTML='SAMIP:1000<br>'+op+":"+points
+                let text = document.getElementById('name').innerHTML='SAMIP:1000<br>'+input+":"+points
                 
 
                 background.pause()
