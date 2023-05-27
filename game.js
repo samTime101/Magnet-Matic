@@ -1,3 +1,4 @@
+//lets go Time 101 sam
 let input = prompt("enter your name")
 
 let canvas = document.getElementById("canvas");
@@ -6,11 +7,12 @@ let ctx = canvas.getContext('2d');
 let rightPressed = false;
 let leftPressed = false;
 
+//please i highly recommend using multiple folders for image and sound effects 
 
-let bounce = new Audio('./soundAssets/bounce.mp3')
-let gameOver = new Audio('./soundAssets/gameOver.mp3')
-let background = new Audio('./soundAssets/background.mp3')
-let upgrade = new Audio('./soundAssets/upgrade.wav')
+let bounce = new Audio('bounce.mp3')
+let gameOver = new Audio('gameOver.mp3')
+let background = new Audio('background.mp3')
+let upgrade = new Audio('upgrade.wav')
 
 let start = document.querySelector('#gameStart')
 let apple = document.getElementById('apple')
